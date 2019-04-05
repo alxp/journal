@@ -64,8 +64,12 @@ function journal_types_pathauto_pattern_alter(PathautoPattern &$pattern, array $
         $parts[] = $citation_metadata['bibcite_number'][0]['value'];
       case 'issue':
         // If this is the volume itself, it will get added via [node:title]
-        array_unshift($parts, $citation_metadata['bibcite_volume'][0]['value']);
-        array_unshift($parts, $citation_metadata['journal_initials'][0]['value']);
+        if (!empty($citation_metadata['bibcite_volume'][0]['value'])) {
+          array_unshift($parts, $citation_metadata['bibcite_volume'][0]['value']);
+        }
+        if (!empty($citation_metadata['journal_initials'][0]['value'])) {
+          array_unshift($parts, $citation_metadata['journal_initials'][0]['value']);
+        }
     }
     if (!empty($parts)) {
       $slug = '';
