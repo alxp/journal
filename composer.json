@@ -6,16 +6,15 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
-        "drush/drush": "^9.0",
-        "drupal/console": "*",
+        "drush/drush": "*",
         "drupal/media_entity_generic": "^1.0",
         "acquia/lightning_dev": "dev-8.x-1.x"
     },
     "require": {
-        "zaporylie/composer-drupal-optimizations": "^1.0",
+        "zaporylie/composer-drupal-optimizations": "^1.1",
         "drupal-composer/drupal-scaffold": "^2.0.0",
         "cweagans/composer-patches": "^1.6.0",
-        "acquia/lightning": "~3.2.2",
+        "acquia/lightning": "~4",
         "drupal/address": "*",
         "drupal/field_group": "*",
         "drupal/entity": "~1.0beta3",
@@ -56,7 +55,7 @@
         "drupal/ckeditor_blockquote_attribution": "^1.0@beta",
         "drupal/eva": "^2.0",
         "drupal/module_filter": "^3.1",
-        "drupal/media_attribution": "^1.0@beta" 
+        "drupal/media_attribution": "^1.0@beta",
     },
     "repositories": {
         "drupal": {

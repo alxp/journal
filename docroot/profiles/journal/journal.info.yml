@@ -1,8 +1,10 @@
 name: 'Journal'
 type: profile
-version: 8.x-dev
 description: 'Content types and workflows for scholarly content.'
-core: '8.x'
+core_version_requirement: '^8.0 || ^9'
+'base profile': lightning
+exclude:
+  - lightning_roles
 install:
   - address
   - field_group
